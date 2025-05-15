@@ -1,0 +1,314 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Header ===== */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a:hover {
+  color: rgb(14, 194, 137);
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+}
+
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.intro-text h1 {
+  font-size: 2.2rem;
+  color: rgb(0, 255, 183);
+}
+
+.intro-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: rgb(0, 255, 183);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* ===== Services ===== */
+.services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.round-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.know-more-btn {
+  background: rgb(0, 255, 183);
+  border: none;
+  color: black;
+  padding: 6px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.more-content {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.know-more-btn.active + .more-content {
+  display: block;
+}
+.more-content {
+  display: none;
+}
+
+.more-content.active {
+  display: block;
+}
+
+
+/* ===== Skills ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+/* ===== Projects ===== */
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.visit-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: rgb(0, 255, 183);
+  color: black;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* ===== Contact Section ===== */
+#contact {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact-left, .contact-right {
+  flex: 1 1 400px;
+}
+
+.contact-left h2 {
+  font-size: 1.8rem;
+  color: rgb(0, 255, 183);
+}
+
+.contact-left img {
+  width: 120px;
+  margin: 1rem 0;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background: rgb(12, 142, 222);
+  color: black;
+  border-radius: 5px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  width: 100%;
+}
+
+.contact-right button {
+  background: rgb(0, 255, 183);
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.9);
+  margin-top: 2rem;
+  color: #ccc;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    right: 2rem;
+    top: 70px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
